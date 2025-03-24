@@ -1,0 +1,15 @@
+<section class="lower-data">
+    <p class="more-info-label">More Information</p>
+
+    <div class="more-info-container">
+        @for (info of infoBlocks(); track info.label) {
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img [src]="info.icon" [alt]="info.label">
+                    <span>{{ info.label }}</span>
+                </div>
+                <p class="info-block-value">{{ info.value }}</p>
+            </div>
+        }
+    </div>
+</section>

@@ -1,0 +1,9 @@
+<div class="container">
+    <article class="upper-data">
+        <img [src]="cityData().temperature > 7 ? 'hot.png' : 'cold.png'" alt="Pogoda">
+        <section class="weather-data">
+            <p class="location">{{ cityData().name }}</p>
+            <p class="temperature">{{ cityData().temperature | number: '1.0-0' }}°C</p>
+        </section>
+    </article>
+</div>

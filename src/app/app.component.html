@@ -1,0 +1,6 @@
+@if (error()) {
+    <app-error-modal title="an error occurred" [message]="error()"/>
+}
+<app-search-bar></app-search-bar>
+<app-weather-information></app-weather-information>
+<app-weather-more-information></app-weather-more-information>

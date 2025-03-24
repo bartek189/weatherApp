@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(185, 201, 253);
+    padding-top: 90px;
+}
